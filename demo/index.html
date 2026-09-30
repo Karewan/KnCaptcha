@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>KnCaptcha demo</title>
+		<link rel="stylesheet" href="/src/style.css">
+		<link rel="stylesheet" href="./demo.css">
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>KnCaptcha <small>vanilla</small></h1>
+				<nav><a href="./vue.html">Vue 3 demo</a></nav>
+			</header>
+
+			<fieldset class="controls">
+				<label>
+					Theme
+					<select id="theme">
+						<option value="light">Light</option>
+						<option value="dark">Dark (.dark on html)</option>
+					</select>
+				</label>
+				<label>
+					Language
+					<select id="lang">
+						<option value="en">en (default)</option>
+						<option value="fr">fr</option>
+						<option value="de">de (registerLocale)</option>
+					</select>
+				</label>
+				<label>
+					Start
+					<select id="start">
+						<option value="click">click</option>
+						<option value="focus">focus</option>
+						<option value="auto">auto</option>
+					</select>
+				</label>
+				<label>
+					Difficulty
+					<select id="bits">
+						<option value="3">low (3 bits)</option>
+						<option value="5" selected>medium (5 bits)</option>
+						<option value="7">high (7 bits)</option>
+						<option value="9">very high (9 bits)</option>
+					</select>
+				</label>
+				<label>
+					Server
+					<select id="server">
+						<option value="ts">TypeScript reference (Vite)</option>
+						<option value="php">KnCaptcha-Php (php -S :8081)</option>
+					</select>
+				</label>
+			</fieldset>
+
+			<form id="form" class="card">
+				<h2>Sign in</h2>
+				<label>
+					<span>Username</span>
+					<input name="username" autocomplete="username" value="demo">
+				</label>
+				<label>
+					<span>Password</span>
+					<input
+						name="password"
+						type="password"
+						autocomplete="current-password"
+						value="demo">
+				</label>
+				<div id="captcha"></div>
+				<div class="actions">
+					<button type="submit" id="submit">Submit</button>
+					<button type="button" id="reset" class="secondary">reset()</button>
+				</div>
+				<output id="result"></output>
+			</form>
+
+			<section class="card">
+				<h2>Custom look</h2>
+				<p>Same widget, other icons and texts, restyled with CSS variables and classes.</p>
+				<div id="custom"></div>
+			</section>
+
+			<section class="card">
+				<h2>Events</h2>
+				<ol id="log" reversed></ol>
+			</section>
+		</main>
+		<script type="module" src="./demo.ts"></script>
+	</body>
+</html>

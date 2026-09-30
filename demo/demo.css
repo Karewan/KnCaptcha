@@ -1,0 +1,156 @@
+:root {
+	--page-bg: #f4f4f5;
+	--page-fg: #18181b;
+	--card-bg: #ffffff;
+	--card-border: #e4e4e7;
+	--muted: #71717a;
+	--accent: #2563eb;
+	color-scheme: light;
+	font-family: system-ui, sans-serif;
+}
+
+:root.dark {
+	--page-bg: #09090b;
+	--page-fg: #f4f4f5;
+	--card-bg: #18181b;
+	--card-border: #27272a;
+	--muted: #a1a1aa;
+	--accent: #60a5fa;
+	color-scheme: dark;
+}
+
+body {
+	margin: 0;
+	color: var(--page-fg);
+	background: var(--page-bg);
+}
+
+main {
+	display: grid;
+	gap: 1rem;
+	max-width: 40rem;
+	margin: 0 auto;
+	padding: 1.5rem 1rem 3rem;
+}
+
+header {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+h1 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+h1 small,
+p {
+	color: var(--muted);
+	font-weight: 400;
+}
+
+h2 {
+	margin: 0 0 0.75rem;
+	font-size: 1.1rem;
+}
+
+a {
+	color: var(--accent);
+}
+
+.controls {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.controls label {
+	display: grid;
+	gap: 0.25rem;
+	font-size: 0.8rem;
+	color: var(--muted);
+}
+
+.card {
+	display: grid;
+	gap: 0.75rem;
+	padding: 1.25rem;
+	background: var(--card-bg);
+	border: 1px solid var(--card-border);
+	border-radius: 1rem;
+}
+
+.card label {
+	display: grid;
+	gap: 0.25rem;
+	font-size: 0.9rem;
+}
+
+input,
+select,
+button {
+	font: inherit;
+	padding: 0.5rem 0.75rem;
+	color: inherit;
+	background: var(--page-bg);
+	border: 1px solid var(--card-border);
+	border-radius: 0.5rem;
+}
+
+.actions {
+	display: flex;
+	gap: 0.5rem;
+}
+
+button {
+	cursor: pointer;
+	color: #fff;
+	background: var(--accent);
+	border-color: transparent;
+}
+
+button.secondary {
+	color: inherit;
+	background: transparent;
+	border-color: var(--card-border);
+}
+
+button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+output {
+	font-family: ui-monospace, monospace;
+	font-size: 0.85rem;
+	word-break: break-all;
+}
+
+#log {
+	margin: 0;
+	padding-left: 1.5rem;
+	font-family: ui-monospace, monospace;
+	font-size: 0.8rem;
+	max-height: 14rem;
+	overflow: auto;
+}
+
+/* Restyled widget: variables plus the classes option */
+.brand .knc {
+	--knc-accent: #9333ea;
+	--knc-success: #9333ea;
+	--knc-radius: 999px;
+	--knc-box-size: 1.5rem;
+	--knc-progress-height: 4px;
+	max-width: 24rem;
+	min-height: 3.25rem;
+}
+
+.brand .knc-label.is-strong {
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}

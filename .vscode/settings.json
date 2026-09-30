@@ -1,0 +1,22 @@
+{
+	"files.exclude": {
+		"**/node_modules/**": true,
+		"**/pnpm-lock.yaml": true
+	},
+	"search.exclude": {
+		"**/node_modules/**": true,
+		"**/pnpm-lock.yaml": true,
+		"**/dist/**": true
+	},
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"editor.dragAndDrop": false,
+	"notebook.dragAndDropEnabled": false,
+	"files.eol": "\n",
+	"editor.renderWhitespace": "all",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"typescript.tsdk": "node_modules/typescript/lib"
+}
