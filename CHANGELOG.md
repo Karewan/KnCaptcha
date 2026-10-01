@@ -1,6 +1,6 @@
 v2.0.0 (2026-09-30)
 ----------------------------
-New algorithm, rewritten in TypeScript. Solutions of version 1 are not accepted: update the server side (KnCaptcha-Php 2) at the same time.
+New algorithm, rewritten in TypeScript. Solutions of version 1 are not accepted: update the server side (KnCaptchaPhp 2) at the same time.
 
 ### Proof of work
 * **Equihash:** memory-hard puzzles (Equihash(96, 5) by default, about 10 MB per worker) instead of the BLAKE2b hashcash of version 1: GPUs and ASICs gain far less on them, the server checks a solution with 2^k hashes.

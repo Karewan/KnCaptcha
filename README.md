@@ -9,7 +9,7 @@ server checks it in microseconds. No image to click, no third party, no cookie, 
 - **TypeScript, strict**, no runtime dependency: vanilla JS widget, Vue 3 component, base CSS with dark mode, Tabler
   icons.
 
-The server side is [KnCaptcha-Php](https://github.com/Karewan/KnCaptcha-Php); [PROTOCOL.md](PROTOCOL.md) describes the
+The server side is [KnCaptchaPhp](https://github.com/Karewan/KnCaptchaPhp); [PROTOCOL.md](PROTOCOL.md) describes the
 exchanges for any other server.
 
 ## Table of contents
@@ -76,7 +76,7 @@ const captcha = new KnCaptcha('#captcha', {
 ```
 
 The widget adds a hidden `kncaptcha` input to the form. The endpoint answers `{"challenge": "..."}` (or the challenge as
-plain text); with KnCaptcha-Php:
+plain text); with KnCaptchaPhp:
 
 ```php
 echo json_encode(['challenge' => $captcha->createChallenge('login')]);
@@ -304,7 +304,7 @@ pnpm icons        # regenerates src/icons.ts from @tabler/icons, formatted by Bi
 ```
 
 The demo pages talk to a TypeScript reference server (in `tests/support/server.ts`) or, through a proxy on `/php`, to
-`php -S 127.0.0.1:8081 examples/server.php` run in the KnCaptcha-Php repository.
+`php -S 127.0.0.1:8081 examples/server.php` run in the KnCaptchaPhp repository.
 
 ## License
 

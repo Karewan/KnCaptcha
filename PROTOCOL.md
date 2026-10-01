@@ -2,7 +2,7 @@
 
 What the server and the browser exchange, and how a solution is checked. The JavaScript library
 ([KnCaptcha](https://github.com/Karewan/KnCaptcha)) and the PHP library
-([KnCaptcha-Php](https://github.com/Karewan/KnCaptcha-Php)) implement it; another server only needs SHA-256 and
+([KnCaptchaPhp](https://github.com/Karewan/KnCaptchaPhp)) implement it; another server only needs SHA-256 and
 HMAC-SHA256.
 
 Notation: `||` concatenates bytes, `LE32(x)` and `BE32(x)` write a 32-bit unsigned integer in little or big endian,

@@ -126,7 +126,7 @@ export default defineConfig(({ mode }) => {
 		root: ".",
 		// pnpm dev, then http://localhost:5173/demo/
 		server: {
-			// "KnCaptcha-Php" server of the demo: php -S 127.0.0.1:8081 examples/server.php, in the PHP repository
+			// "KnCaptchaPhp" server of the demo: php -S 127.0.0.1:8081 examples/server.php, in the PHP repository
 			proxy: {
 				"/php": {
 					target: "http://127.0.0.1:8081",
